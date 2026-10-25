@@ -1,0 +1,23 @@
+# Python and local environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Angular dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# Large raw dataset - re-downloadable from Kaggle (link in README)
+data/Loan_Default.csv
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# Local logs
+*.log

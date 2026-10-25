@@ -1,0 +1,2 @@
+loan_limit,Gender,approv_in_adv,loan_type,loan_purpose,Credit_Worthiness,open_credit,business_or_commercial,loan_amount,term,Neg_ammortization,interest_only,lump_sum_payment,property_value,occupancy_type,total_units,income,credit_type,Credit_Score,co-applicant_credit_type,age,submission_of_application,LTV,Region,dtir1
+cf,Male,nopre,type1,p4,l1,nopc,nob/c,216500,300.0,not_neg,not_int,not_lpsm,308000.0,pr,1U,3660.0,CIB,541,CIB,45-54,not_inst,70.29220779,North,48.0

@@ -1,0 +1,61 @@
+<main class="shell">
+  <header>
+    <p class="eyebrow">DevOps Lab · Flask + Angular + XGBoost</p>
+    <h1>Loan Default Risk Checker</h1>
+    <p class="sub">Enter a borrower's loan application details. The model estimates how likely the loan is to default.</p>
+  </header>
+
+  @if (deployedStatic) {
+    <aside class="notice">
+      Static GitHub Pages demo. The form is shown, but predictions only work when Flask and Angular run locally.
+    </aside>
+  }
+
+  <form (ngSubmit)="submit()" class="card">
+    <div class="form-head">
+      <h2>Application details <span class="count">{{ fields.length }} fields</span></h2>
+      <div class="actions">
+        <button type="button" class="ghost" (click)="fillSample()">Fill sample borrower</button>
+        <button type="button" class="ghost" (click)="clear()">Clear</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      @for (field of fields; track field.name) {
+        <label>
+          <span>{{ field.label }}</span>
+          @if (field.kind === 'number') {
+            <input type="number" step="any" [name]="field.name"
+                   [min]="field.min ?? null" [max]="field.max ?? null"
+                   [placeholder]="(field.min ?? '') + ' – ' + (field.max ?? '')"
+                   [(ngModel)]="values[field.name]" [required]="field.required" />
+          } @else {
+            <select [name]="field.name" [(ngModel)]="values[field.name]" [required]="field.required">
+              <option [ngValue]="null">Select…</option>
+              @for (option of field.options ?? []; track option) {
+                <option [ngValue]="option">{{ option }}</option>
+              }
+            </select>
+          }
+        </label>
+      }
+    </div>
+
+    <button type="submit" class="primary" [disabled]="loading() || deployedStatic">
+      {{ loading() ? 'Predicting…' : 'Check default risk' }}
+    </button>
+  </form>
+
+  @if (error()) {
+    <p class="error" role="alert">{{ error() }}</p>
+  }
+
+  @if (result(); as r) {
+    <section class="card result" [class.bad]="r.prediction === 1">
+      <h2>{{ r.label }}</h2>
+      <p class="prob">Default probability: <strong>{{ r.default_probability | percent: '1.1-1' }}</strong></p>
+      <div class="meter"><div class="fill" [style.width.%]="r.default_probability * 100"></div></div>
+      <p class="muted">{{ r.disclaimer }}</p>
+    </section>
+  }
+</main>

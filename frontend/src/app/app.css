@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+:host { display: block; background: #f4f6f9; min-height: 100vh; }
+.shell { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; color: #1b2b3c; }
+header { margin-bottom: 20px; }
+.eyebrow { margin: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #5a7184; }
+h1 { margin: 6px 0; font-size: 28px; }
+.sub { margin: 0; color: #4a5d6e; }
+.card { background: #fff; border: 1px solid #dde4ea; border-radius: 10px; padding: 20px; }
+.form-head { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+h2 { margin: 0; font-size: 18px; }
+.count { font-size: 13px; font-weight: 400; color: #6b7f90; margin-left: 6px; }
+.actions { display: flex; gap: 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; margin: 18px 0; }
+label { display: grid; gap: 5px; font-size: 13px; font-weight: 600; color: #34495c; }
+input, select { padding: 9px 10px; border: 1px solid #b9c6d1; border-radius: 6px; font: inherit; font-weight: 400; background: #fff; }
+input:focus, select:focus { outline: 2px solid #1d6fa5; outline-offset: 0; border-color: #1d6fa5; }
+button { border-radius: 6px; padding: 10px 16px; cursor: pointer; font: inherit; }
+.primary { background: #1d6fa5; color: #fff; border: 0; font-weight: 600; }
+.ghost { background: #fff; color: #1d6fa5; border: 1px solid #1d6fa5; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.notice { background: #fff4d6; border: 1px solid #f0d58a; padding: 12px 14px; border-radius: 8px; margin-bottom: 16px; }
+.error { color: #a01728; font-weight: 600; }
+.result { margin-top: 20px; border-left: 6px solid #1f8a4c; }
+.result.bad { border-left-color: #c0392b; }
+.prob { font-size: 16px; }
+.meter { height: 12px; background: #e8edf2; border-radius: 6px; overflow: hidden; }
+.fill { height: 100%; background: linear-gradient(90deg, #1f8a4c, #e0a100, #c0392b); }
+.muted { color: #6b7f90; font-size: 13px; }

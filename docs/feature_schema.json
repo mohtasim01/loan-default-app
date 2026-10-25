@@ -1,0 +1,205 @@
+[
+  {
+    "name": "loan_limit",
+    "kind": "category",
+    "options": [
+      "cf",
+      "ncf"
+    ]
+  },
+  {
+    "name": "Gender",
+    "kind": "category",
+    "options": [
+      "Female",
+      "Joint",
+      "Male",
+      "Sex Not Available"
+    ]
+  },
+  {
+    "name": "approv_in_adv",
+    "kind": "category",
+    "options": [
+      "nopre",
+      "pre"
+    ]
+  },
+  {
+    "name": "loan_type",
+    "kind": "category",
+    "options": [
+      "type1",
+      "type2",
+      "type3"
+    ]
+  },
+  {
+    "name": "loan_purpose",
+    "kind": "category",
+    "options": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ]
+  },
+  {
+    "name": "Credit_Worthiness",
+    "kind": "category",
+    "options": [
+      "l1",
+      "l2"
+    ]
+  },
+  {
+    "name": "open_credit",
+    "kind": "category",
+    "options": [
+      "nopc",
+      "opc"
+    ]
+  },
+  {
+    "name": "business_or_commercial",
+    "kind": "category",
+    "options": [
+      "b/c",
+      "nob/c"
+    ]
+  },
+  {
+    "name": "loan_amount",
+    "kind": "number",
+    "min": 16500.0,
+    "max": 2596500.0
+  },
+  {
+    "name": "term",
+    "kind": "number",
+    "min": 96.0,
+    "max": 360.0
+  },
+  {
+    "name": "Neg_ammortization",
+    "kind": "category",
+    "options": [
+      "neg_amm",
+      "not_neg"
+    ]
+  },
+  {
+    "name": "interest_only",
+    "kind": "category",
+    "options": [
+      "int_only",
+      "not_int"
+    ]
+  },
+  {
+    "name": "lump_sum_payment",
+    "kind": "category",
+    "options": [
+      "lpsm",
+      "not_lpsm"
+    ]
+  },
+  {
+    "name": "property_value",
+    "kind": "number",
+    "min": 18000.0,
+    "max": 1058000.0
+  },
+  {
+    "name": "occupancy_type",
+    "kind": "category",
+    "options": [
+      "ir",
+      "pr",
+      "sr"
+    ]
+  },
+  {
+    "name": "total_units",
+    "kind": "category",
+    "options": [
+      "1U",
+      "2U",
+      "3U",
+      "4U"
+    ]
+  },
+  {
+    "name": "income",
+    "kind": "number",
+    "min": 0.0,
+    "max": 14100.0
+  },
+  {
+    "name": "credit_type",
+    "kind": "category",
+    "options": [
+      "CIB",
+      "CRIF",
+      "EQUI",
+      "EXP"
+    ]
+  },
+  {
+    "name": "Credit_Score",
+    "kind": "number",
+    "min": 500.0,
+    "max": 900.0
+  },
+  {
+    "name": "co-applicant_credit_type",
+    "kind": "category",
+    "options": [
+      "CIB",
+      "EXP"
+    ]
+  },
+  {
+    "name": "age",
+    "kind": "category",
+    "options": [
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74",
+      "<25",
+      ">74"
+    ]
+  },
+  {
+    "name": "submission_of_application",
+    "kind": "category",
+    "options": [
+      "not_inst",
+      "to_inst"
+    ]
+  },
+  {
+    "name": "LTV",
+    "kind": "number",
+    "min": 36.00746269,
+    "max": 115.2515723
+  },
+  {
+    "name": "Region",
+    "kind": "category",
+    "options": [
+      "North",
+      "North-East",
+      "central",
+      "south"
+    ]
+  },
+  {
+    "name": "dtir1",
+    "kind": "number",
+    "min": 22.0,
+    "max": 57.0
+  }
+]

@@ -1,0 +1,26 @@
+Model,Metric,Ours,Paper,Difference
+Random Forest,Accuracy,0.8912,0.8907,0.0005
+Random Forest,Precision,0.9387,0.94,-0.0013
+Random Forest,Recall,0.6008,0.6,0.0008
+Random Forest,F1,0.7327,0.73,0.0027
+Random Forest,AUC,0.8885,0.89,-0.0015
+XGBoost,Accuracy,0.8986,0.897,0.0016
+XGBoost,Precision,0.935,0.92,0.015
+XGBoost,Recall,0.6359,0.64,-0.0041
+XGBoost,F1,0.757,0.76,-0.003
+XGBoost,AUC,0.898,0.89,0.008
+Decision Tree,Accuracy,0.8876,0.8847,0.0029
+Decision Tree,Precision,0.938,0.92,0.018
+Decision Tree,Recall,0.586,0.59,-0.004
+Decision Tree,F1,0.7214,0.72,0.0014
+Decision Tree,AUC,0.8648,0.86,0.0048
+KNN,Accuracy,0.8554,0.8478,0.0076
+KNN,Precision,0.7931,0.77,0.0231
+KNN,Recall,0.5648,0.55,0.0148
+KNN,F1,0.6597,0.64,0.0197
+KNN,AUC,0.8154,0.81,0.0054
+Logistic Regression,Accuracy,0.7772,0.7732,0.004
+Logistic Regression,Precision,0.6436,0.63,0.0136
+Logistic Regression,Recall,0.2297,0.22,0.0097
+Logistic Regression,F1,0.3386,0.32,0.0186
+Logistic Regression,AUC,0.753,0.74,0.013
